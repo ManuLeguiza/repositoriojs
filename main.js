@@ -12,13 +12,26 @@ if(usuarioNombre == "Manuel Leguizamon"){
         alert("Contraseña incorrecta")
     }
 }
+
+const saludar = nombre=> console.log("Hola " = nombre)
+
+saludar("Manu")
+
 let nombres = ["Manu","Gabi","Cami"]
-
-console.log(1)
-
-for(let i = 0; i >= 9; i++){
-    if(i == 5){
-        continue
-    }
-    console.log(i)
+for(let i = 0; i < nombres.length;i++){
+    console.log("Existe el nombre" + nombres[i] + "en la lista")
+    break
 }
+
+let nombre = prompt("ingrese un nombre")
+
+while(nombre != "Gabi"){
+    alert("Nombre equivocado")
+    nombre = prompt("vuelve a intentarlo")
+}
+// for(let i = 0; i >= 9; i++){
+//     if(i == 5){
+//         continue
+//     }
+//     console.log(i)
+// }
